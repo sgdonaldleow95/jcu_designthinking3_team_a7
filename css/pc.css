@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {
+	max-width: 940px;
+	
+}
+
+header {
+	float: none;
+	width:100%;
+}
+

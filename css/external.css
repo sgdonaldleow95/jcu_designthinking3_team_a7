@@ -1,0 +1,251 @@
+68@charset "utf-8";
+nav, article, section, aside, header, footer, hgroup{
+	display:block;
+}
+
+@font-face {
+	font-family: Sansation_Light;
+	src: url('Sansation_Light.ttf');
+}
+
+body {
+	margin: 5px auto;
+	background-color:#1F4BB2;
+	background-position: top center;
+	background-repeat:no-repeat;
+	font-size: 14px;
+	width: 100%;
+	font-family:  verdana, helvetica, arial, Sansation_Light;
+	color: #000;
+}
+
+header {
+	width: 100%;
+	height: 200px;
+}
+
+article{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: auto;
+	/*Sets transparency to background but not text*/
+	background: rgba( 227, 227, 227, 0.6);
+	color: black;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.image{
+	padding: 10px;
+	float: right;
+
+}
+section {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+#img1{
+	padding: 10px;
+	float: left;
+
+}
+.image2{
+	padding: 10px;
+	float: left;
+
+}
+
+h1{
+font-weight: bold;
+font-size:30px;
+color:#00b0db;
+
+text-align:center;
+}
+
+h2{
+font-family: Sansation_Light;
+font-size:36px;
+font-weight: bold;
+	transform:rotate(-2deg);
+	-ms-transform:rotate(-2deg); /* IE 9 */
+	-webkit-transform:rotate(-2deg); /* Safari and Chrome */
+
+}
+
+.formLayout label
+{
+    display: block;
+    width: 22%;
+    float: left;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+
+h3{
+font-size:20px;
+color:#000;
+}
+
+h4{
+font-size:20px;
+color:#000;
+}
+
+
+
+footer{
+	background-color: #242424;
+	font-size: 12px;
+	margin-top:10px;
+	text-align: center;
+	color: white;
+	width: 100%;
+	height: 70px;
+	clear:both;
+	border-radius: 5px 5px 5px 5px;
+	}
+		
+.block{
+	display:block;
+	width: 100%;
+	height: 400px;
+}
+
+
+.logout{
+	
+	float: right;
+}
+
+progress#progressBar:hover:before {
+    display: inline;
+    content: attr(value);
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+p{
+	text-align:center;
+}
+
+.table1 {
+	border: 1px solid #000;
+	border-top: 0px;
+	border-bottom: 1px;
+	border-right: 0px;
+	border-left: 0px;
+}
+
+table {
+	color:#000;
+}
+
+legend {
+	color:#000;
+}
+
+#content {
+	float: left;
+    width: 68%;
+    padding: 0 0 0 0;
+	padding-bottom: 20;
+	background-color:#FFF;
+	border-radius: 2px 2px 2px 2px;
+	margin-bottom: 10px;
+	
+}
+ 
+aside {
+	float: right;
+    width: 30%;
+	background-color:#000;
+	color:#FFF;
+	border-radius: 2px 2px 2px 2px;
+	margin-right:5px;
+	margin-bottom: 10px;
+}
+
+section figure {
+    position: relative;
+    margin: 0 auto; /* to center it */
+    padding: 30px 0 0 0;  
+   
+    font-size: 15px;
+    text-align: center;
+}
+section figure div {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+}
+
+section figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black; /* fallback */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb000000, endColorstr=#bb000000); /* IE fix */
+    background: rgba(0,0,0,.7); /* transparent background */  
+    color: #fff; 
+    padding: 10px;    /* padding around text */
+}
+
