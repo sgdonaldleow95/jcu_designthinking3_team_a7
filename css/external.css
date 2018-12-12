@@ -1,4 +1,9 @@
-68@charset "utf-8";
+@charset "utf-8";
+
+html {
+	height: 100%;
+}
+
 nav, article, section, aside, header, footer, hgroup{
 	display:block;
 }
@@ -9,19 +14,20 @@ nav, article, section, aside, header, footer, hgroup{
 }
 
 body {
-	margin: 5px auto;
 	background-color:#1F4BB2;
-	background-position: top center;
-	background-repeat:no-repeat;
 	font-size: 14px;
 	width: 100%;
 	font-family:  verdana, helvetica, arial, Sansation_Light;
 	color: #000;
+	min-height: 100%;
+	flex-direction: column;
+	display: flex;
 }
 
 header {
 	width: 100%;
 	height: 200px;
+	text-align: center;
 }
 
 article{
@@ -29,10 +35,9 @@ article{
 	margin-bottom: 10px;
 	width: 100%;
 	height: auto;
-	/*Sets transparency to background but not text*/
 	background: rgba( 227, 227, 227, 0.6);
 	color: black;
-	border-radius: 3px 3px 3px 3px;
+	border-radius: 10px 10px 10px 10px;
 }
 
 .image{
@@ -41,11 +46,13 @@ article{
 
 }
 section {
-    margin: 0 auto;
-    width: 100%;
-
+	width: 100%;
+	height: 100%;
 }
 
+fieldset {
+	border: 0;
+}
 
 #img1{
 	padding: 10px;
@@ -59,58 +66,51 @@ section {
 }
 
 h1{
-font-weight: bold;
-font-size:30px;
-color:#00b0db;
+	font-weight: bold;
+	font-size:30px;
+	color:#00b0db;
 
-text-align:center;
+	text-align:center;
 }
 
-h2{
-font-family: Sansation_Light;
-font-size:36px;
-font-weight: bold;
-	transform:rotate(-2deg);
-	-ms-transform:rotate(-2deg); /* IE 9 */
-	-webkit-transform:rotate(-2deg); /* Safari and Chrome */
 
-}
-
-.formLayout label
-{
-    display: block;
-    width: 22%;
-    float: left;
-    margin-bottom: 10px;
-    text-align: right;
-    padding-right: 15px;
-}
 
 
 h3{
-font-size:20px;
-color:#000;
+	font-size:20px;
+	color:#000;
 }
 
 h4{
-font-size:20px;
-color:#000;
+	font-size:20px;
+	color:#000;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
 }
 
 
-
-footer{
+#footer{
 	background-color: #242424;
 	font-size: 12px;
 	margin-top:10px;
 	text-align: center;
 	color: white;
 	width: 100%;
-	height: 70px;
-	clear:both;
-	border-radius: 5px 5px 5px 5px;
-	}
-		
+	padding: 20px;
+}
+
 .block{
 	display:block;
 	width: 100%;
@@ -119,13 +119,13 @@ footer{
 
 
 .logout{
-	
+
 	float: right;
 }
 
 progress#progressBar:hover:before {
-    display: inline;
-    content: attr(value);
+	display: inline;
+	content: attr(value);
 }
 .modalDialog {
 	position: fixed;
@@ -160,27 +160,6 @@ progress#progressBar:hover:before {
 	background: -o-linear-gradient(#fff, #999);
 }
 
-.close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 50px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-
-.close:hover { background: #00d9ff; }
-
 p{
 	text-align:center;
 }
@@ -203,49 +182,63 @@ legend {
 
 #content {
 	float: left;
-    width: 68%;
-    padding: 0 0 0 0;
-	padding-bottom: 20;
-	background-color:#FFF;
-	border-radius: 2px 2px 2px 2px;
+	width: 69%;
+	padding: 0 0 0 0;
+	padding-bottom: 20px;
+	background-color: #FEF8DC;
+	border-radius: 1px 1px 1px 1px;
 	margin-bottom: 10px;
-	
+
 }
- 
+
+#content2 {
+	width: 100%;
+	padding: 0 0 0 0;
+	padding-bottom: 20px;
+	background-color:#FEF8DC;
+	border-radius: 1px 1px 1px 1px;
+	margin-bottom: 10px;
+
+}
+
 aside {
 	float: right;
-    width: 30%;
-	background-color:#000;
+	width: 30%;
+	background-color:#FFE600;
 	color:#FFF;
-	border-radius: 2px 2px 2px 2px;
+	border-radius: 1px 1px 1px 1px;
 	margin-right:5px;
 	margin-bottom: 10px;
 }
 
+#address {
+	float:right;
+}
+
 section figure {
-    position: relative;
-    margin: 0 auto; /* to center it */
-    padding: 30px 0 0 0;  
-   
-    font-size: 15px;
-    text-align: center;
+	position: relative;
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+
+	font-size: 15px;
+	text-align: center;
 }
 section figure div {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-    padding: 0;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	padding: 0;
 }
 
 section figure figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: black; /* fallback */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb000000, endColorstr=#bb000000); /* IE fix */
-    background: rgba(0,0,0,.7); /* transparent background */  
-    color: #fff; 
-    padding: 10px;    /* padding around text */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: black;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb000000, endColorstr=#bb000000); /* IE fix */
+	background: rgba(0,0,0,.7);
+	color: #fff;
+	padding: 10px;
 }
 
