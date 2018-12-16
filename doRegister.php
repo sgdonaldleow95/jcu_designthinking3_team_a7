@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>FruityMates Wholesale Market</title>
+    <title>JCU Singapore Job Portal</title>
     <link href="css/external.css" rel="stylesheet"/>
     <link href="css/nav.css" rel="stylesheet"/>
     <link href="css/media.css" rel="stylesheet"/>
