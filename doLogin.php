@@ -24,7 +24,7 @@
             <br><br><br><br>
             <?php
             session_start();
-            include "dbFunctions.php";
+            include('includes/dbFunctions.php');
             $username = $_POST['username'];
             $password1 = $_POST['password'];
 

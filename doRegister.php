@@ -25,7 +25,7 @@
             <center>
             <br><br><br>
             <?php
-            include('dbFunctions.php');
+            include('includes/dbFunctions.php');
             $username = $_POST['username'];
             $password = $_POST['password'];
             $usertype = $_POST['usertype'];
