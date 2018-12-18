@@ -11,10 +11,10 @@
 
 <body>
 <header>
-    <a href="index.php"><img id="img1" src="images/logo.jpeg" height="120" width="250"></a>
+    <img id="img1" src="images/banner.jpg" width="100%">
 </header>
 <nav>
-    <?php include('nav.php') ?>
+    <?php include('includes/nav.php') ?>
 </nav>
 <img src="images/banner.jpeg" alt="" width="100%"/>
 <section>
@@ -36,14 +36,12 @@
             if (mysqli_num_rows($result) == 1) {
                 $row = mysqli_fetch_array($result);
                 $_SESSION['name'] = $row['username'];
-                $_SESSION['role'] = $row['role'];
+                $_SESSION['usertype'] = $row['usertype'];
                 $_SESSION['id'] = $row['id'];
-                $_SESSION['email'] = $row['id'];
-                $_SESSION['contact'] = $row['contact'];
-                $_SESSION['company'] = $row['company_name'];
+                $_SESSION['email'] = $row['email'];
 
                 echo "<font color=".$color."><b>Welcome, ".$row['username']."</b><br></font><br>";
-                echo "<font color=".$color."><b>Logging in....</b></font><br><br><br>";
+                echo "<font color=".$color."><b>You will be redirected</b></font><br><br><br>";
                 header('Refresh: 3; url=index.php');
             } else {
                 echo "<font color=".$color."><b>Wrong Password</b></font>";
@@ -55,7 +53,7 @@
     </div>
 </section>
 <footer>
-    <?php include('footer.php') ?>
+    <?php include('includes/footer.php') ?>
 </footer>
 </body>
 </html>

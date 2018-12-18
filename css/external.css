@@ -14,14 +14,14 @@ nav, article, section, aside, header, footer, hgroup{
 }
 
 body {
-	background-color:#1F4BB2;
+	margin: 5px auto;
+	background-color:#FFF;
+	background-position: top center;
+	background-repeat:no-repeat;
 	font-size: 14px;
 	width: 100%;
 	font-family:  verdana, helvetica, arial, Sansation_Light;
 	color: #000;
-	min-height: 100%;
-	flex-direction: column;
-	display: flex;
 }
 
 header {
@@ -108,7 +108,9 @@ h4{
 	text-align: center;
 	color: white;
 	width: 100%;
-	padding: 20px;
+	height: 70px;
+	clear:both;
+	border-radius: 5px 5px 5px 5px;
 }
 
 .block{

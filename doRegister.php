@@ -10,30 +10,29 @@
 </head>
 
 <body>
-<header>
-    <a href="index.php"><img id="img1" src="images/logo.jpeg" height="120" width="250"></a>
-</header>
-<nav>
-    <?php include('nav.php') ?>
-</nav>
-<img src="images/banner.jpeg" alt="" width="100%"/>
-<section>
-    <div id="content2">
-        <br>
-        <h2><u><center>FruityMates' Wholesale Market Registration</center></u></h2>
-        <br>
-        <center>
+    <header>
+        <img id="img1" src="images/banner.jpg" width="100%">
+    </header>
+    <nav>
+        <?php include('includes/nav.php') ?>
+    </nav>
+    <img src="images/banner.jpeg" alt="" width="100%"/>
+    <section>
+        <div id="content2">
+            <br>
+            <h2><u><center>JCU Singapore Job Portal Registration Status</center></u></h2>
+            <br>
+            <center>
             <br><br><br>
             <?php
             include('dbFunctions.php');
-            $fullname = $_POST['fullname'];
             $username = $_POST['username'];
             $password = $_POST['password'];
-            $contact = $_POST['contact'];
+            $usertype = $_POST['usertype'];
             $email = $_POST['email'];
-
             $squestions = $_POST['squestion'];
             $sanswers = $_POST['sanswer'];
+
             $password2 = SHA1($password);
 
             $query = "SELECT username FROM registered_user WHERE username = '$username'";
@@ -46,19 +45,20 @@
                 header('Refresh: 2; url=index.php');
             }
             else {
-                $insertQuery = "INSERT INTO registered_user (fullname, username, password, contact, email, securityquestion, answer, role, company_name) VALUES ('$fullname', '$username', '$password2', '$contact', '$email', '$squestions', '$sanswers', 1, NULL)";
+                $insertQuery = "INSERT INTO registered_users (username, password, email, usertype,securityquestion, answer) VALUES ('$fullname', '$username', '$password2', '$contact', '$email', '$squestions', '$sanswers', 1, NULL)";
                 $result = mysqli_query($link, $insertQuery) or die(mysqli_error($link));
-                echo "<font color=".$color."><b>Registering...</b></font>";
+                echo "<font color=".$color."><b>Registered. You will be redirected soon.</b></font>";
 
-                header('Refresh: 2; url=registered.php');
+                header('Refresh: 2; url=index.php');
             }
 
             ?>
             <br><br><br><br><br><br>
-        </center>
-        </article>
+            </center>
+        </div>
+    </section>
         <footer>
-            <?php include('footer.php') ?>
+            <?php include('includes/footer.php') ?>
         </footer>
 </body>
 </html>

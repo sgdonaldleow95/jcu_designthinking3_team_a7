@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html>
 <head>
@@ -17,36 +18,25 @@
 </nav>
 <section>
 	<div id="content">
-	    <br>
-        <center><h3><u>JCU Singapore Job Portal</u></h3></center>
+        <?php if(isset($_SESSION['role']) && $_SESSION['role'] == "1") { ?>
         <br>
+        <h2><u><center>JCU Student's Portal</center></u></h2>
+        <br><br>
+        <p>Recent Job posting will go here</p>
+        <?php } else if (isset($_SESSION['role']) && $_SESSION['role'] == "2") { ?>
+        <br>
+        <h2><u><center>JCU Employer's Portal</center></u></h2>
+        <br><br>
+        <p>New information will appear here</p>
+	    <?php } else { ?>
+        <br>
+        <center><h3><u>JCU Singapore Job Portal</u></h3></center>
+        <br><br>
         <p>Searching for a job or looking for potential employees?</p>
+        <?php } ?>
 	</div>
 <aside>
-    <center><h3><font color="#000">Portal Credentials</font></h3>
-	<hr>
-	<br>
-        <form name="login" method="post" action="doLogin.php">
-            <fieldset>
-                <table>
-                    <tr>
-                        <td><font color="black">Username :</font></td>
-                        <td><input name="username" type="text" size="20" placeholder="Username" required></td>
-                    </tr>
-                    <tr><td><font color="black">Password :</font></td>
-                        <td> <input name="password" type="password" placeholder="password" required></td>
-                    </tr>
-                </table>
-                <button class="button" input name="submit" type="submit"><b>Log In</b></button>
-                <a href="registration.php"><button class="button" input type="button"><b>Register</b></button></a><br>
-                <a href="forgetPassword.php"><button class="button" input type="button"><b>Forget Password?</b></button></a>
-            </fieldset>
-        </form>
-
-        <br>
-	<br>
-	<br>
-	</center>
+    <?php include('includes/sidepanel.php') ?>
 </aside>
 </section>
 <footer id="footer">

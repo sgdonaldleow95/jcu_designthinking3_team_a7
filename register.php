@@ -12,26 +12,27 @@
 
 <body>
 <header>
-    <a href="index.php"><img id="img1" src="images/logo.jpeg" height="120" width="250"></a>
+    <img id="img1" src="images/banner.jpg" width="100%">
 </header>
 <nav>
-    <?php include('nav.php') ?>
+    <?php include('includes/nav.php') ?>
 </nav>
-<img src="images/banner.jpeg" alt="" width="100%"/>
-
 <section>
     <div id="content2">
         <br>
-        <h2><u><center>JCU Singapore Job Portal</center></u></h2>
+        <h2><u><center>JCU Singapore Job Portal Registration</center></u></h2>
         <br>
         <center>
             <form name='register' method='post' action='doRegister.php'>
-                <br>
                 <table>
                     <tr>
-                        <td><font color='black'>Full Name: </font></td>
-                        <td><input name='fullname' type='text' placeholder='Full Name' required></td>
+                        <td><input type="radio" name="usertype" value="1" required><b>Student &nbsp;&nbsp;</b></td>
+                        <td><input type="radio" name="usertype" value="2"><b>Company</b></td>
                     </tr>
+                </table>
+                <br>
+                <br>
+                <table>
                     <tr>
                         <td><font color='black'>Username: </font></td>
                         <td><input name='username' type='text' size='20' placeholder='Username' required></td>
@@ -39,10 +40,6 @@
                     <tr>
                         <td><font color='black'>Password :</font></td>
                         <td> <input name='password' type='password' placeholder='Password' required></td>
-                    </tr>
-                    <tr>
-                        <td><font color='black'>Contact Number: </font></td>
-                        <td><input name='contact' type='number' size='20' placeholder='Contact Number' required></td>
                     </tr>
                     <tr>
                         <td><font color='black'>Email Address: </font></td>
@@ -74,8 +71,8 @@
 
     </div>
 </section>
-<footer>
-    <?php include('footer.php') ?>
+<footer id="footer">
+    <?php include('includes/footer.php') ?>
 </footer>
 </body>
 </html>
