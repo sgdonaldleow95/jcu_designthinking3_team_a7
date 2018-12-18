@@ -45,7 +45,7 @@
                 header('Refresh: 2; url=index.php');
             }
             else {
-                $insertQuery = "INSERT INTO registered_users (username, password, email, user_type,securityquestion, answer) VALUES ('$username', '$password2', '$email', '$usertype','$squestions', '$sanswers')";
+                $insertQuery = "INSERT INTO registered_users (username, password, email, user_type, forget_password_question, forget_password_answer) VALUES ('$username', '$password2', '$email', '$usertype','$squestions', '$sanswers')";
                 $result = mysqli_query($link, $insertQuery) or die(mysqli_error($link));
                 echo "<font color=".$color."><b>Registered. You will be redirected soon.</b></font>";
 
