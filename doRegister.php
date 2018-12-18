@@ -57,7 +57,7 @@
             </center>
         </div>
     </section>
-        <footer>
+        <footer id="footer">
             <?php include('includes/footer.php') ?>
         </footer>
 </body>

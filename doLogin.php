@@ -44,7 +44,7 @@
                 echo "<font color=".$color."><b>You will be redirected</b></font><br><br><br>";
                 header('Refresh: 3; url=index.php');
             } else {
-                echo "<font color=".$color."><b>Wrong Password</b></font>";
+                echo "<font color=".$color."><b>Wrong username or password</b></font>";
                 header('Refresh: 2; url=index.php');
             }
             ?>
