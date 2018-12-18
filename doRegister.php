@@ -35,7 +35,7 @@
 
             $password2 = SHA1($password);
 
-            $query = "SELECT username FROM registered_user WHERE username = '$username'";
+            $query = "SELECT username FROM registered_users WHERE username = '$username'";
             $results = mysqli_query($link, $query) or die(mysqli_error($link));
 
             $color = "black";
