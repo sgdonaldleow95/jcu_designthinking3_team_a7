@@ -36,7 +36,7 @@
             if (mysqli_num_rows($result) == 1) {
                 $row = mysqli_fetch_array($result);
                 $_SESSION['name'] = $row['username'];
-                $_SESSION['usertype'] = $row['usertype'];
+                $_SESSION['usertype'] = $row['user_type'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['email'] = $row['email'];
 
