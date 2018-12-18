@@ -18,12 +18,12 @@
 </nav>
 <section>
 	<div id="content">
-        <?php if(isset($_SESSION['role']) && $_SESSION['role'] == "1") { ?>
+        <?php if(isset($_SESSION['usertype']) && $_SESSION['usertype'] == "1") { ?>
         <br>
         <h2><u><center>JCU Student's Portal</center></u></h2>
         <br><br>
         <p>Recent Job posting will go here</p>
-        <?php } else if (isset($_SESSION['role']) && $_SESSION['role'] == "2") { ?>
+        <?php } else if (isset($_SESSION['usertype']) && $_SESSION['usertype'] == "2") { ?>
         <br>
         <h2><u><center>JCU Employer's Portal</center></u></h2>
         <br><br>

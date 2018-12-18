@@ -1,4 +1,4 @@
-<?php if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){ ?>
+<?php if(isset($_SESSION['usertype']) && $_SESSION['usertype'] == '1'){ ?>
     <h3><font color="#000">Control Panel</font></h3>
     <b><font color="#000">Welcome, <?php echo $_SESSION['name'] ?></font></b>
     <br>
@@ -11,7 +11,7 @@
     <br>
     <br>
 
-<?php } elseif(isset($_SESSION['role']) && $_SESSION['role'] == '2'){ ?>
+<?php } elseif(isset($_SESSION['usertype']) && $_SESSION['usertype'] == '2'){ ?>
     <h3><font color="#000">Control Panel</font></h3>
     <b><font color="#000">Welcome, <?php echo $_SESSION['name'] ?></font></b>
     <br>
@@ -24,7 +24,7 @@
     <br>
     <br>
     <br>
-<?php } elseif(isset($_SESSION['role']) && $_SESSION['role'] == '8'){ ?>
+<?php } elseif(isset($_SESSION['usertype']) && $_SESSION['usertype'] == '8'){ ?>
     <h3><font color="#000">Control Panel</font></h3>
     <b><font color="#000">Administrator</font></b>
     <br>
