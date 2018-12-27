@@ -1,0 +1,207 @@
+body { 
+font-family: verdana, arial, sans-serif;
+background: #242424;
+color: #000000;
+padding: 0px;
+margin: 0px;
+}
+
+/*layout*/
+
+wrapper {
+padding:15px;
+background: #fff;
+width: 800px;
+height: auto;
+position: relative;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: auto; 
+margin-right: auto;
+}
+
+header	{
+width: 800px;
+height: 150px;
+margin-bottom:1px;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+
+}
+
+main {
+margin-top:10px;
+float: left;
+width: 580px;
+height: auto;
+position: relative;
+
+}
+
+bottom{ 
+clear: both;
+}
+
+footer{ 
+margin-top:50px;
+background:url(../images/footer3.png) repeat-x;
+color:#fff;
+height:118px;
+text-align:center;
+}
+
+footer a{color:#23bbe1;}
+
+/*links*/
+
+ul#features {
+list-style-image:url(../images/square.png);
+list-style-type:square;
+}
+
+marquee#scrollingtext{
+padding-top:2px;
+background:#fdf8c4;
+border:1px solid #efe680;
+height:20px;
+width:798px;
+	font-family: Segoe UI;
+	font-size: 12px;
+}
+A {
+	color: #1c2934;
+	text-decoration: none;
+}
+
+A:HOVER {
+	color: #7094b2;
+}
+
+A: link { 
+text-decoration: none;
+}
+
+A: active { 
+text-decoration: none;
+}
+
+A: visited { 
+text-decoration: none;
+}
+
+/*sidebar*/
+
+h3{
+height:28px;
+background:url(../images/sidebartop.png) repeat-x;
+text-align:center;
+font-family: Segoe UI;
+color:#fff;
+font-size: 16px;
+}
+
+.sidebartop{
+height:28px;
+background:url(../images/sidebartop.png) repeat-x;
+text-align:center;
+font-family: Segoe UI;
+color:#fff;
+font-size: 16px;
+}
+
+#sidebar {
+margin-top:10px;
+float: right;
+width: 200px;
+}
+
+.sidebarbox{
+border:1px solid #cccccc;
+margin:0;
+padding:10px;
+}
+
+/*headers*/
+
+h1  {
+margin: 4px 4px;
+padding: 4px 4px;
+font-family: arial, sans-serif;
+background-color: #284d65;
+border: 1px solid #cce1f1;
+font-size: 150%;
+color: #FFFFFF;
+}
+
+h2{
+font-size:15px;
+color:#00b0db;
+border-bottom:2px solid #00b0db;
+}
+
+
+/*top navigation*/
+
+nav {
+width: 798px;
+height: 30px;
+position: relative;
+background: #818181 url(../images/navtile.png) repeat-x;
+border: 1px solid #646464;
+margin-bottom:1px;
+}
+
+
+nav ul {
+	float: left;
+	list-style: none;	
+	width: 798px;		
+	margin: auto;
+	padding: 0;
+	display: inline;	
+}
+
+nav ul li {
+	display: inline;
+	margin: 0; padding: 0;
+}
+
+nav ul li a {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 23px;
+	margin: 0;
+	padding-top: 7px;
+	border-right: 1px solid #646464;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Segoe UI;
+	font-size: 12px;
+}
+nav ul li a:hover {
+	background: #666666 url(../images/navhover.png) repeat-x;
+	color: #FFFFFF;
+}
+
+
+}
+/*etc*/
+
+input, textarea
+{ font-family: verdana, arial, sans-serif;
+  border: 1px solid;
+  font-size: 100%;
+  margin: 2px;
+}
+
+message-yellow	{
+	line-height:1.8em;
+	border:1px solid #F8E3AC;
+	background:#FFF4CC;
+	color: #e79300;
+	font-weight:bold;
+	font-family: Tahoma;
+	text-align:center;
+	}
