@@ -13,13 +13,13 @@
     <img id="img1" src="images/banner.jpg" width="100%">
 </header>
 <nav>
-    <?php include('nav.php') ?>
+    <?php include('includes/nav.php') ?>
 </nav>
 <section>
     <div id="content">
         <center>
-            <h3>Company Profile</h3>
-            <br>
+            <h3><u>Company Profile</u></h3>
+            <br><br>
             <form name="comapnyProfile" method="post" action="doUpdateProfileCompany.php" ENCTYPE="multipart/form-data">
                 <table>
                     <tr>
@@ -29,19 +29,19 @@
                         <td>Company Name:</td><td><input type='text' name='companyname' placeholder='Name of Company' required></td>
                     </tr>
                     <tr>
-                        <td>Location</td><td><input type="text" name="location" placeholder="Company Address" required></td>
+                        <td>Location:</td><td><input type="text" name="location" placeholder="Company Address" required></td>
                     </tr>
                     <tr>
-                        <td>Industry</td><td><input type="text" name="industrytype" placeholder="Industry Type" required> </td>
+                        <td>Industry:</td><td><input type="text" name="industrytype" placeholder="Industry Type" required> </td>
                     </tr>
                     <tr>
-                        <td>Company Description</td><td><input type="text" name="description" placeholder="About the company" required> </td>
+                        <td>Company Description:</td><td><input type="text" name="description" placeholder="About the company" required> </td>
                     </tr>
                     <tr>
-                        <td>Company Website</td><td><input type="email" name="email" placeholder="Company email address" required> </td>
+                        <td>Company Website:</td><td><input type="email" name="email" placeholder="Company email address" required> </td>
                     </tr>
                     <tr>
-                        <td>Short description<</td><td><textarea rows="4" cols="50"></textarea></td>
+                        <td>Short description:</td><td><textarea rows="4" cols="50"></textarea></td>
                     </tr>
                     <tr>
                         <td></td><td><input class="button" input type="file" id="resume" name="document"></td>
@@ -57,7 +57,7 @@
 
     <aside>
         <center>
-            <?php include('sidepanel.php') ?>
+            <?php include('includes/sidepanel.php') ?>
 
         </center>
     </aside>
