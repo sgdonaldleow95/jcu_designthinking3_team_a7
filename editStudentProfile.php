@@ -28,16 +28,12 @@
                 <br>
                 <table>
                     <tr>
-                        <td>Student ID: </td>
-                        <td> <input name='register_id' type='text' placeholder='13512345' required></td>
-                    </tr>
-                    <tr>
                         <td>Full Name: </td>
                         <td><input name='fullname' type='text' size='20' placeholder='Full Name' required></td>
                     </tr>
                     <tr>
                         <td>Age: </td>
-                        <td> <input name='age' type='password' placeholder='Age' required></td>
+                        <td> <input name='age' type='number' placeholder='Age' required></td>
                     </tr>
                     <tr>
                         <td><font color='black'>Course Of Study: </font></td>
@@ -52,7 +48,7 @@
                     </tr>
                     <tr>
                         <td>Contact: </td>
-                        <td> <input name='contact' type='text' placeholder='91234567' required></td>
+                        <td> <input name='contact' type='number' placeholder='91234567' required></td>
                     </tr>
                     <tr>
                         <td><font color='black'>Summary: </font></td>
