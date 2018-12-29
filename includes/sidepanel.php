@@ -4,7 +4,7 @@
     <br>
     <br>
     <a href="studentProfilePage.php"><button class="button" input type="button">View Profile</button></a><br>
-    <a href="#"><button class="button" input type="button">Edit Profile</button></a><br>
+    <a href="editStudentProfile.php"><button class="button" input type="button">Edit Profile</button></a><br>
     <a href="#"><button class="button" input type="button">Messages</button></a><br>
     <a href="doLogout.php"><button class="button" input type="button">Log Out</button></a>
     <br>
