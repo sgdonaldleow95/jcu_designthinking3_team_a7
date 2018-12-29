@@ -16,9 +16,7 @@ session_destroy();
 
 <section>
     <article>
-        <center>
-            <?php header("Location: index.php"); ?>
-        </center>
+        <?php header("Location: index.php"); ?>
     </article>
 </section>
 <footer id="footer">
