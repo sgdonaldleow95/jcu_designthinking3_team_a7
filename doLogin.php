@@ -32,7 +32,6 @@
 
             $query = "SELECT * FROM registered_users WHERE username = '$username' and password = '$password2'";
             $result = mysqli_query($link, $query) or die(mysqli_error($link));
-            $color = "black";
             if (mysqli_num_rows($result) == 1) {
                 $row = mysqli_fetch_array($result);
                 $_SESSION['name'] = $row['username'];
@@ -40,8 +39,8 @@
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['email'] = $row['email'];
 
-                echo "<font color=".$color."><b>Welcome, ".$row['username']."</b><br></font><br>";
-                echo "<font color=".$color."><b>You will be redirected</b></font><br><br><br>";
+                echo "<b>Welcome, ".$row['username']."</b><br><br>";
+                echo "<b>You will be redirected</b><br><br><br>";
                 header('Refresh: 3; url=index.php');
             } else {
                 echo "<font color=".$color."><b>Wrong username or password</b></font>";

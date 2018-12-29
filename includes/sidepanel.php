@@ -3,7 +3,7 @@
     <b><font color="#000">Welcome, <?php echo $_SESSION['name'] ?></font></b>
     <br>
     <br>
-    <a href="#"><button class="button" input type="button">View Profile</button></a><br>
+    <a href="studentProfilePage.php"><button class="button" input type="button">View Profile</button></a><br>
     <a href="#"><button class="button" input type="button">Edit Profile</button></a><br>
     <a href="#"><button class="button" input type="button">Messages</button></a><br>
     <a href="doLogout.php"><button class="button" input type="button">Log Out</button></a>
