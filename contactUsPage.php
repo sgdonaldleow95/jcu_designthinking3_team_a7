@@ -31,9 +31,16 @@
             <p>New information will appear here</p>
         <?php } else { ?>
             <br>
-            <center><h3><u>JCU Singapore Job Portal</u></h3></center>
+            <center><h3><u>Contact Us</u></h3></center>
             <br><br>
-            <p>Searching for a job or looking for potential employees?</p>
+            <h4>Sims Drive Campus:</h4>
+            <br>
+            <ul>
+                <ol><b>Telephone:</b><br> +65 6709 3888</ol><br>
+                <ol><b>Fax:</b><br> +65 6709 3889</ol><br>
+                <ol><b>Email:</b><br>JCUSConnect@jcu.edu.sg </ol><br>
+                <ol><b>Address:</b><br> 149 Sims Drive, Singapore 387380</ol><br>
+            </ul>
         <?php } ?>
     </div>
     <aside>
