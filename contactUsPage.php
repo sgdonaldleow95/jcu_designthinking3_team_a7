@@ -33,7 +33,7 @@
             <br>
             <center><h3><u>Contact Us</u></h3></center>
             <br><br>
-            <h4>Sims Drive Campus:</h4>
+            <h4>JCUS Connect Contact Information:</h4>
             <br>
             <ul>
                 <ol><b>Telephone:</b><br> +65 6709 3888</ol><br>
