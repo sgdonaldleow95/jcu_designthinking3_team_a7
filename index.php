@@ -7,6 +7,7 @@
 		<link href="css/external.css" rel="stylesheet"/>
         <link href="css/nav.css" rel="stylesheet"/>
         <link href="css/media.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="images/businessIcon.png" type="image/jpg">
 </head>
 
 <body>
