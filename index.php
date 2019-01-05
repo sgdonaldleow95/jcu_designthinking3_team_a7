@@ -11,7 +11,7 @@
 
 <style>
     div p {
-        border: 9px solid black;
+        border: 7px solid black;
         margin: auto;
         padding: 20px;
         text-align: left;
@@ -27,8 +27,20 @@
     }
 
     div a:hover, a:active {
-        background-color: red;
+        background-color: darkblue;
     }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
 
 <body>
@@ -45,7 +57,31 @@
         <h2><u><center>JCU Student's Portal</center></u></h2>
         <br><br>
 
-        <p>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><a href="default.asp" target="_blank">Apply now</a></p>
+            <table>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Description</th>
+                    <th>Apply</th>
+                </tr>
+                <tr>
+                    <td>JOB#1</td>
+                    <td>XYZ</td>
+                    <td>Apply now</td>
+                </tr>
+                <tr>
+                    <td>JOB#2</td>
+                    <td>LMN</td>
+                    <td>Apply now</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+            </table>
+
+
+            <p>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><a href="default.asp" target="_blank">Apply now</a></p>
 
         <?php } else if (isset($_SESSION['usertype']) && $_SESSION['usertype'] == "2") { ?>
         <br>
