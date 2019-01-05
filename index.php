@@ -10,14 +10,14 @@
 </head>
 
 <style>
-    p {
+    div p {
         border: 9px solid black;
         margin: auto;
         padding: 20px;
         text-align: left;
     }
 
-    a:link, a:visited {
+    div a:link, a:visited {
         background-color: blue;
         color: white;
         padding: 14px 25px;
@@ -26,7 +26,7 @@
         display: inline-block;
     }
 
-    a:hover, a:active {
+    div a:hover, a:active {
         background-color: red;
     }
 </style>
