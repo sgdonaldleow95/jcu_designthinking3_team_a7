@@ -51,7 +51,9 @@
         </center>
     </div>
     <aside>
+        <center>
         <?php include('includes/sidepanel.php') ?>
+        </center>
     </aside>
 </section>
 

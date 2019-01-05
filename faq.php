@@ -42,7 +42,9 @@
             </center>
     </div>
     <aside>
-        <?php include('includes/sidepanel.php') ?>
+        <center>
+            <?php include('includes/sidepanel.php') ?>
+        </center>
     </aside>
 </section>
 <footer id="footer">

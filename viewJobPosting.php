@@ -26,10 +26,7 @@
             $query_job_data = "SELECT * FROM job_opportunity WHERE company_id = '$companyid'";
             $result_job_data = mysqli_query($link, $query_job_data) or die(mysqli_error($link));
 
-            $query_company_data = "SELECT * FROM company_profile WHERE registered_users_id = '$companyid'";
-            $result_company_data = mysqli_query($link, $query_company_data) or die(mysqli_error($link));
-
-            if (mysqli_num_rows($result_company_data) && mysqli_num_rows($result_job_data) > 0) {
+            if (mysqli_num_rows($result_job_data) > 0) {
                 echo "<table border=1>
                         <tr>
 						<th>Job Name</th>
@@ -41,8 +38,8 @@
 						<th>Contract Length</th>
 						<th>Description</th>
 						<th>Requirement</th></tr>";
-                while (($data = mysqli_fetch_array($result_company_data)) && ($jobdata = mysqli_fetch_array($result_job_data))) {
-                    $company_name = $data['company_name'];
+                while ($jobdata = mysqli_fetch_array($result_job_data)) {
+                    $company_name = $jobdata['company_name'];
                     $jobname = $jobdata['job_name'];
                     $date = $jobdata['date_posted'];
                     $jobtype = $jobdata['job_type'];
@@ -63,22 +60,17 @@
 							<td>$contract</td>
 							<td>$description</td>
 							<td>$requirement</td>
-						  </tr>
-						  </table>";
+						  </tr>";
                 }
-                } else {
-                    ?>
-                    Please <b><u><a href="editStudentProfile.php">update</a></u></b> your profile before viewing this page.
-                    <br>
-                    Thank you.
-                    <?php
+                echo "</table>";
             }
                 ?>
-
         </center>
     </div>
     <aside>
+        <center>
         <?php include('includes/sidepanel.php') ?>
+        </center>
     </aside>
 </section>
 

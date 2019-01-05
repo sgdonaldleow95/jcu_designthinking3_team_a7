@@ -24,6 +24,9 @@
             <form name="comapnyProfile" method="post" action="doCreateJobListing.php">
                 <table>
                     <tr>
+                        <td>Company Name:</td><td><input type='text' name='companyname' placeholder='Company Name' required></td>
+                    </tr>
+                    <tr>
                         <td>Job Name:</td><td><input type='text' name='jobname' placeholder='Name of Job' required></td>
                     </tr>
                     <tr>

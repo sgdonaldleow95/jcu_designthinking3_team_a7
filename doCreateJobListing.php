@@ -23,7 +23,8 @@
             include('includes/dbFunctions.php');
                 $msg = "Job Listing have been created";
 
-                $companyid = $_SESSION['id'];
+                $companyid   = $_SESSION['id'];
+                $companyname = $_POST['companyname'];
                 $jname = $_POST['jobname'];
                 $date = $_POST['date'];
                 $jobtype = $_POST['jobtype'];
@@ -34,7 +35,7 @@
                 $description = $_POST['description'];
                 $requirement = $_POST['requirement'];
 
-                $insertQuery = "INSERT INTO job_opportunity (job_name, date_posted, company_id, job_type, location, working_hours, salary, contract_length, job_scope_description, job_requirement) VALUES ('$jname', '$date', '$companyid', '$jobtype', '$location', '$workhours', '$salary', '$duration', '$description', '$requirement')";
+                $insertQuery = "INSERT INTO job_opportunity (job_name, date_posted, company_name, job_type, location, working_hours, salary, contract_length, job_scope_description, job_requirement, company_id) VALUES ('$jname', '$date', '$companyname', '$jobtype', '$location', '$workhours', '$salary', '$duration', '$description', '$requirement', '$companyid')";
 
                 $result = mysqli_query($link, $insertQuery) or die(mysqli_error($link));
 
