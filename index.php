@@ -9,6 +9,15 @@
         <link href="css/media.css" rel="stylesheet"/>
 </head>
 
+<style>
+    p {
+        border: 9px solid black;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+    }
+</style>
+
 <body>
 	<header>
 	    <img id="img1" src="images/banner.jpg" width="100%">
@@ -22,7 +31,7 @@
         <br>
         <h2><u><center>JCU Student's Portal</center></u></h2>
         <br><br>
-        <p>Recent Job posting will go here</p>
+        <p>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br>BUTTON HERE</p>
         <?php } else if (isset($_SESSION['usertype']) && $_SESSION['usertype'] == "2") { ?>
         <br>
         <h2><u><center>JCU Employer's Portal</center></u></h2>
