@@ -35,11 +35,11 @@
             $resume = $row['resume'];
 
             echo "<b>Name: ".$name."</b><br>";
-            echo "<b>Age: ".$name."</b><br>";
-            echo "<b>Course: ".$name."</b><br>";
-            echo "<b>Speciality: ".$name."</b><br>";
-            echo "<b>Contact: ".$name."</b><br>";
-            echo "<b>Resume: <a href='resume/'".$name."'>".$name."</a></b><br><br>";
+            echo "<b>Age: ".$age."</b><br>";
+            echo "<b>Course: ".$course."</b><br>";
+            echo "<b>Speciality: ".speciality."</b><br>";
+
+            echo "<b>Resume: <a href='resume/'".resume."'>".name."</a></b><br><br>";
 
         } else {
             ?>
