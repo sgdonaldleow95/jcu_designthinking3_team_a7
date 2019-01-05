@@ -21,12 +21,15 @@
         color: black;
     }
     div a:link, a:visited {
+        padding: 5px 10px;
         background-color: blue;
         color: white;
-        padding: 5px 10px;
+        font-size: 15px;
         text-align: center;
         text-decoration: none;
+        border-radius: 9px;
         display: inline-block;
+
     }
 
     div a:hover, a:active {
