@@ -16,6 +16,19 @@
         padding: 20px;
         text-align: left;
     }
+
+    a:link, a:visited {
+        background-color: blue;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover, a:active {
+        background-color: red;
+    }
 </style>
 
 <body>
@@ -31,7 +44,9 @@
         <br>
         <h2><u><center>JCU Student's Portal</center></u></h2>
         <br><br>
-        <p>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br>BUTTON HERE</p>
+
+        <p>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><a href="default.asp" target="_blank">Apply now</a></p>
+
         <?php } else if (isset($_SESSION['usertype']) && $_SESSION['usertype'] == "2") { ?>
         <br>
         <h2><u><center>JCU Employer's Portal</center></u></h2>
