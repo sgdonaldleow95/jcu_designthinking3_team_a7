@@ -15,13 +15,13 @@
         display: inline-table;
         width: 194px;
         height: 140px;
-        border: 2px solid black;
+        border: 1px solid black;
         background-color:aliceblue;
         margin-left: 15px;
         color: black;
     }
     div a:link, a:visited {
-        padding: 5px 10px;
+        padding: 6px 10px;
         background-color: blue;
         color: white;
         font-size: 15px;
@@ -29,9 +29,7 @@
         text-decoration: none;
         border-radius: 9px;
         display: inline-block;
-
     }
-
     div a:hover, a:active {
         background-color: darkblue;
 
