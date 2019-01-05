@@ -38,7 +38,7 @@
             echo "<b>Age: ".$age."</b><br>";
             echo "<b>Course: ".$course."</b><br>";
             echo "<b>Speciality: ".speciality."</b><br>";
-
+            echo "<b>Contact: ".contact."</b><br>";
             echo "<b>Resume: <a href='resume/'".resume."'>".name."</a></b><br><br>";
 
         } else {
