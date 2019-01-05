@@ -10,17 +10,20 @@
 </head>
 
 <style>
-    div p {
-        border: 7px solid black;
-        margin: auto;
-        padding: 20px;
-        text-align: left;
-    }
 
+    .inline-box {
+        display: inline-table;
+        width: 194px;
+        height: 140px;
+        border: 2px solid black;
+        background-color:aliceblue;
+        margin-left: 15px;
+        color: black;
+    }
     div a:link, a:visited {
         background-color: blue;
         color: white;
-        padding: 14px 25px;
+        padding: 5px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -28,19 +31,7 @@
 
     div a:hover, a:active {
         background-color: darkblue;
-    }
 
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    th, td {
-        text-align: left;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
 
 <body>
@@ -57,31 +48,30 @@
         <h2><u><center>JCU Student's Portal</center></u></h2>
         <br><br>
 
-            <table>
-                <tr>
-                    <th>Job Title</th>
-                    <th>Description</th>
-                    <th>Apply</th>
-                </tr>
-                <tr>
-                    <td>JOB#1</td>
-                    <td>XYZ</td>
-                    <td>Apply now</td>
-                </tr>
-                <tr>
-                    <td>JOB#2</td>
-                    <td>LMN</td>
-                    <td>Apply now</td>
-                </tr>
-                <tr>
-                    <td>Joe</td>
-                    <td>Swanson</td>
-                    <td>$300</td>
-                </tr>
-            </table>
+        <div class="inline-box">
+            <p><br>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><br><a href="default.asp" target="_blank">Apply now</a></p>
+            </div>
 
+        <div class="inline-box">
+            <p><br>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><br><a href="default.asp" target="_blank">Apply now</a></p>
+        </div>
 
-            <p>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><a href="default.asp" target="_blank">Apply now</a></p>
+        <div class="inline-box">
+                <p><br>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><br><a href="default.asp" target="_blank">Apply now</a></p>
+        </div>
+        <br><br>
+        <div class="inline-box">
+
+            <p><br>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><br><a href="default.asp" target="_blank">Apply now</a></p>
+        </div>
+
+        <div class="inline-box">
+            <p><br>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><br><a href="default.asp" target="_blank">Apply now</a></p>
+        </div>
+
+        <div class="inline-box">
+            <p><br>NEW JOB<br>BEWARE OF ADDICTION<br>Job Scope: SEE MORE<br><br><a href="default.asp" target="_blank">Apply now</a></p>
+        </div>
 
         <?php } else if (isset($_SESSION['usertype']) && $_SESSION['usertype'] == "2") { ?>
         <br>
