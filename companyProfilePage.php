@@ -22,27 +22,27 @@
             <br><br>
             <?php
             include('includes/dbFunctions.php');
-            $studentid = $_SESSION['id'];
-            $query = "SELECT * FROM student_table WHERE registered_users_id = '$studentid'";
+            $companyid = $_SESSION['id'];
+            $query = "SELECT * FROM company_profile WHERE registered_users_id = '$companyid'";
             $result = mysqli_query($link, $query) or die(mysqli_error($link));
             if (mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_array($result);
-                $name = $row['student_name'];
-                $age = $row['age'];
-                $course = $row['course'];
-                $speciality = $row['speciality'];
-                $contact = $row['contact'];
-                $resume = $row['resume'];
+                $name = $row['company_name'];
+                $address = $row['address'];
+                $industry = $row['industry'];
+                $company_website = $row['company_website'];
+                $contact = $row['email'];
+                $description = $row['description'];
 
-                echo "<b>Name: ".$name."</b><br>";
-                echo "<b>Age: ".$age."</b><br>";
-                echo "<b>Course: ".$course."</b><br>";
-                echo "<b>Speciality: ".$speciality."</b><br>";
+                echo "<b>Company Name: ".$name."</b><br>";
+                echo "<b>Address: ".$address."</b><br>";
+                echo "<b>Industry: ".$industry."</b><br>";
+                echo "<b>Company Website: ".$company_website."</b><br>";
                 echo "<b>Contact: ".$contact."</b><br>";
-                echo "<b>Resume: <a href=resume/".$resume.">".$name."'s resume</a></b><br><br>";
+                echo "<b>Description: ".$description."'s resume</a></b><br><br>";
             } else {
                 ?>
-                Please <b><u><a href="editStudentProfile.php">update</a></u></b> your profile before viewing this page.<br>
+                Please <b><u><a href="editCompanyProfile.php">update</a></u></b> your profile before viewing this page.<br>
                 Thank you.
                 <?php
             }
@@ -51,7 +51,9 @@
         </center>
     </div>
     <aside>
-        <?php include('includes/sidepanel.php') ?>
+        <center>
+            <?php include('includes/sidepanel.php') ?>
+        </center>
     </aside>
 </section>
 

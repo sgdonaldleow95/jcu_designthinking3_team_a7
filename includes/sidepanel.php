@@ -16,10 +16,10 @@
     <b><font color="#000">Welcome, <?php echo $_SESSION['name'] ?></font></b>
     <br>
     <br>
-    <a href="#"><button class="button" input type="button">View Profile</button></a><br>
-    <a href="#"><button class="button" input type="button">Edit Profile</button></a><br>
+    <a href="companyProfilePage.php"><button class="button" input type="button">View Profile</button></a><br>
+    <a href="editCompanyProfile.php"><button class="button" input type="button">Edit Profile</button></a><br>
+    <a href="createJobListing.php"><button class="button" input type="button">Create Job's Posting</button></a><br>
     <a href="#"><button class="button" input type="button">View Job's Posting</button></a><br>
-    <a href="#"><button class="button" input type="button">Add New Jobs</button></a><br>
     <a href="doLogout.php"><button class="button" input type="button">Log Out</button></a>
     <br>
     <br>
@@ -54,3 +54,5 @@
         </fieldset>
     </form>
 <?php } ?>
+
+
