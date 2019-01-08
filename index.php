@@ -20,16 +20,6 @@
         margin-left: 15px;
         color: black;
     }
-    div a:link, a:visited {
-        padding: 6px 10px;
-        background-color: black;
-        color: white;
-        font-size: 15px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 9px;
-        display: inline-block;
-    }
 
 
 </style>
