@@ -28,42 +28,34 @@
 </nav>
 <section>
     <div id="content">
-            <br>
-            <center><h2><u>Browse Job's Listing</u></h2>
+        <br>
+        <center><h2><u>Applicants</u></h2>
             <br><br>
-                <?php
-                include('includes/dbFunctions.php');
-                $query = "SELECT * FROM job_opportunity ORDER by date_posted DESC";
-                $result = mysqli_query($link, $query) or die(mysqli_error($link));
+            <?php
+            include('includes/dbFunctions.php');
+            $companyid = $_SESSION['id'];
+            $query = "SELECT * FROM job_application WHERE employer_id = '$companyid'";
+            $result = mysqli_query($link, $query) or die(mysqli_error($link));
 
-                if (mysqli_num_rows($result) != 0) {
-                    echo "
-                    <form name=browseJob method=post action=jobDetails.php>
+            if (mysqli_num_rows($result) != 0) {
+                echo "
+                    <form name=viewDetails method=post action=viewDetails.php>
                     <table width= 100%>
                     <tr>
-                    <th>Company</th>
-                    <th>Job Name</th>
-                    <th>Job Type</th>
-                    <th>Salary</th>
-                    <th>Application</th>
+                    <th>Job ID</th>
+                    <th>Potential Employer</th>
                     </tr>";
-                        while ($row = mysqli_fetch_array($result)) {
-                            $jobid = $row['id'];
-                            $cname = $row['company_name'];
-                            $jname = $row['job_name'];
-                            $jobtype = $row['job_type'];
-                            $salary = $row['salary'];
-                            echo "<tr>
-							<td><center>$cname</center></td>                     
-							<td><center>$jname</center></td>
-							<td><center>$jobtype</center></td>
-							<td><center>$salary</center></td>
-							<td><center><button class='button' name='application' value='$jobid'>Application</button></center></td>
+                while ($row = mysqli_fetch_array($result)) {
+                    $jobid = $row['job_id'];
+                    $studentid = $row['student_id'];
+                    echo "<tr>
+							<td><center>$jobid</center></td>                     
+							<td><center><button class='button' name='viewdetails' value='$studentid'>View Details</button></center></td>
 							</tr>";
-                        }
-                    echo "</table> </form>";
                 }
-                ?>
+                echo "</table> </form>";
+            }
+            ?>
         </center>
     </div>
     <aside>

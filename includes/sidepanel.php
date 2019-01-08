@@ -6,6 +6,7 @@
     <a href="studentProfilePage.php"><button class="button" input type="button">View Profile</button></a><br>
     <a href="editStudentProfile.php"><button class="button" input type="button">Edit Profile</button></a><br>
     <a href="#"><button class="button" input type="button">Messages</button></a><br>
+    <a href="#"><button class="button" input type="button">View My Application</button></a><br>
     <a href="doLogout.php"><button class="button" input type="button">Log Out</button></a>
     <br>
     <br>
@@ -20,6 +21,7 @@
     <a href="editCompanyProfile.php"><button class="button" input type="button">Edit Profile</button></a><br>
     <a href="createJobListing.php"><button class="button" input type="button">Create Job's Posting</button></a><br>
     <a href="viewJobPosting.php"><button class="button" input type="button">View Job's Posting</button></a><br>
+    <a href="viewApplications.php"><button class="button" input type="button">View Applications</button></a><br>
     <a href="doLogout.php"><button class="button" input type="button">Log Out</button></a>
     <br>
     <br>
@@ -50,7 +52,7 @@
             </table>
             <button class="button" input name="submit" type="submit">Sign In</button>
             <a href="register.php"><button class="button" input type="button">Register</button></a><br>
-            <a href="forgetPassword.php"><button class="button" input type="button">Forget Password?</button></a>
+            <a href="#"><button class="button" input type="button">Forget Password?</button></a>
         </fieldset>
     </form>
 <?php } ?>
