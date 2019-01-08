@@ -37,7 +37,7 @@
                         </tr>
                         <tr>
                             <td><font color='black'>Course Of Study: </font></td>
-                            <td> <select name='course_of_study'>
+                            <td> <select name='course_of_study' required>
                                     <option value='' disabled selected>Select your Course</option>
                                     <option value='BIT'>Bachelor of Information Technology</option>
                                     <option value='BPS'>Bachelor of Psychological Science</option>
@@ -52,11 +52,11 @@
                         </tr>
                         <tr>
                             <td><font color='black'>Summary: </font></td>
-                            <td><textarea name="comment" rows="7" cols="40" placeholder="Write a summary of yourself here..."></textarea></td>
+                            <td><textarea name="comment" rows="7" cols="40" placeholder="Write a summary of yourself here..." required></textarea></td>
                         </tr>
                         <tr>
                             <td>Resume: </td>
-                            <td><input class="button" input type="file" id="upload" name="resume_file_pdf" accept="application/pdf"></td>
+                            <td><input class="button" input type="file" id="upload" name="resume_file_pdf" accept="application/pdf" required></td>
                         </tr>
                     </table>
                     <br>
